@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Web3 World</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #a1c4fd 100%);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 2s ease-in-out, textGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff9a9e, 0 0 30px #fad0c4, 0 0 40px #ff9a9e;
+            }
+            100% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff9a9e, 0 0 40px #fad0c4, 0 0 50px #ff9a9e;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Web3 World</h1>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Welcome to the Web3 World!');
+        });
+    </script>
+</body>
+</html>
